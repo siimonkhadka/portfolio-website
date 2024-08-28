@@ -1,0 +1,193 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f4e7;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4b4238;
+    color: white;
+    padding: 1em;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c9b89e;
+}
+
+#hero {
+    margin-top: 60px; /* To avoid overlap with the fixed header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #c9b89e, #f4e6d2);
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #4b4238;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    color: #4b4238;
+}
+
+section {
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    width: 48%;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+#resume-btn {
+    background-color: #4b4238;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#resume-btn:hover {
+    background-color: #6e5e4d;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+}
+
+.social-icon img:hover {
+    opacity: 0.7;
+}
+
+footer {
+    background-color: #4b4238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.profile-photo {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.project {
+    width: 48%;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    animation: slideIn 1s ease-in-out;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
